@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient( 180deg, hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    padding: 20px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+
+
+/* Card's setting */
+
+.card{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 90px 18px 30px 18px;
+    margin-top: 90px;
+}
+
+.card__container-item{
+    display: flex;
+    justify-content:space-evenly;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    box-sizing: border-box;
+}
+
+.card__content{
+    width: 320px;
+}
+
+.card_title{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+
+@media screen and (min-width:800px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+        width: 700px;
+        padding: 20px 40px;
+        margin-left: 310px;
+    }
+
+    .card__container{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .card_title{
+        text-align: left;
+    }
+
+}
+
+/* Icon setting */
+
+.main__icon{
+    width: 200px;
+    position: fixed;
+    left: 90px;
+    top: 25px;
+}
+
+.shadow__icon{
+    width: 200px;
+    position: fixed;
+    left: 80px;
+    top: 5px;
+}
+
+.box__icon{
+    width: 85px;
+    position: fixed;
+    left: 80px;
+    top: 80px;
+}
+
+@media screen and (min-width:800px){
+    .main__icon{
+        width: 300px;
+        left: 300px;
+        top: 180px;
+    }
+
+    .shadow__icon{
+        width: 300px;
+        left: 300px;
+        top: 160px;
+    }
+
+    .box__icon{
+        width: 120px;
+        left: 300px;
+        top: 260px;
+    }
+}
+
+
+/* Questions and answers */
+
+.card_question{
+    width: 250px;
+}
+
+.card__answer{
+    opacity: .8;
+}
+
+.card__arrow{
+    width: 10px;
+    align-self: center;
+    margin-left: 70px;
+}
+
+/* (De)activated items */
+
+.card__question-activated{
+    font-weight: 700;
+}
+
+.card__answer-deactivated{
+    display: none;
+}
+
+.card__arrow-activated{
+    align-self: flex-start;
+    margin-top: 14px;
+    transform: rotate(180deg);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    margin-top: 15px;
+}
+.attribution a { 
+    color: #FFFFFF;
+}
